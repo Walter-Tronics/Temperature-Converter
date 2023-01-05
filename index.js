@@ -16,16 +16,16 @@ let result;
 
   btn.addEventListener("click",()=>{
     //Stopping the run when input is empty
-    if (value1.value=="") {
+    if (!value1.value) {
       alert("Please input a value");
-      btn.removeEventListener("click");
+      return;
     }
     //seize operation when nothing is selected
     let checkSelect1 = from.value=="" && to.value=="";
     let checkSelect2 = from.value=="" || to.value=="";
     if (checkSelect1 || checkSelect2) {
       alert("Please pick your selection");
-      btn.removeEventListener("click");
+      return;
     }
     
     //Convert from Celsius to Kelvin
