@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter</title>
+    <link rel="stylesheet" href="bootstrap-5.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <main>
+        <h2>Temp Convert</h2>
+        <section>
+            <select class="form-select" name="select" id="from">
+                <option value="" disabled selected>Convert From</option>
+                <option value="celsius">Celsius</option>
+                <option value="kelvin">Kelvin</option>
+                <option value="fahrenheit">Fahrenheit</option>
+            </select>
+            <input class="form-control" type="number" id="value1" placeholder="Enter your value">
+            <select class="form-select" name="select" id="to">
+                <option value="" disabled selected>Convert To</option>
+                <option value="°c">Celsius</option>
+                <option value="k">Kelvin</option>
+                <option value="°F">Fahrenheit</option>
+            </select>
+            <input class="form-control mb-0" type="text" id="value2" disabled>
+            <span class="mb-3" id="info">Result</span>
+            <button id="convert">Convert</button>
+        </section>
+    </main>
+    <script src="index.js"></script>
+</body>
+</html>
