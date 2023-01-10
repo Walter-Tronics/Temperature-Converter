@@ -64,7 +64,7 @@ let result;
       //Stoping the operation
       if (checkOne || checkTwo || checkThree){
         value2.value="";
-        btn.removeEventListener("click");
+        return;
       }
       //Setting the result value
     value2.value=result+(to.value);
