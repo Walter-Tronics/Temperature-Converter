@@ -1,6 +1,6 @@
 # Temperature-Converter
 A converter programmed in JavaScript to converting from the Celsius, Fahrenheit or Kelvin scale to any of them
-## Languages:
+### Languages:
 * HTML
 * CSS
 * JavaScript
