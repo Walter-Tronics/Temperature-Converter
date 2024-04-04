@@ -32,22 +32,27 @@ let result;
     if (from.value=="celsius" && to.value=="k") {
       result = parseInt(value1.value)+273;
     }
+
     //Convert from Celsius to Fahrenheit
     if (from.value=="celsius" && to.value=="°F") {
       result = (parseInt(value1.value)*9/5) +32;
     }
-    //Convert form Kelvin to Celsius
+
+    //Convert from Kelvin to Celsius
     if (from.value=="kelvin" && to.value=="°c") {
       result = parseInt(value1.value)-273;
     }
-    //Convert form Kelvin to Fahrenheit
+
+    //Convert from Kelvin to Fahrenheit
     if (from.value=="kelvin" && to.value=="°F") {
       result = (((parseInt(value1.value)-273.15)*9/5)+32).toFixed("2");
     }
+
     //Convert from Fahrenheit to Celsius
     if (from.value=="fahrenheit" && to.value=="°c") {
       result = ((parseInt(value1.value)-32)*5/9).toFixed("2");
     }
+
     //Convert from Fahrenheit to Kelvin
     if (from.value=="fahrenheit" && to.value=="k") {
       result = (((parseInt(value1.value)-32)*5/9)+273.15).toFixed(3);
